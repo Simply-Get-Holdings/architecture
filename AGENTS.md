@@ -1,20 +1,30 @@
 # Architecture Agent Instructions
 <!-- JADE-BOOTSTRAP:START -->
-## Jade / Tool-Agnostic Startup
+## Jade Wake — ONE brain, every tool
 
-Before meaningful work in this project, load the real Jade brain from the central control layer. Local files are project adapters only; Supabase brain `dfzrtqotntujdrqkupcd` plus `C:\Users\Troy\Documents\ChatGPT assistant\control-layer\brain-bootstrap.mjs` is the source of truth.
+Jade has exactly ONE brain: Supabase project `vrdtmkntuguyudmztxan` ("Simply Get Inc").
+The canonical wake procedure lives IN the brain: `brain_references` ref_key `jade-wake-protocol`.
+It supersedes everything below and any other wake instruction anywhere.
+
+Wake, in order:
+1. Connect to `vrdtmkntuguyudmztxan` via the Supabase connector/MCP when available.
+2. Read `brain_profile` (identity + house rules).
+3. Read `brain_action_log` latest 15 (current state).
+4. Read `jade-wake-protocol` (confirm procedure is current).
+5. Read task-relevant `brain_references` / `brain_projects` / `brain_agents`.
+6. Repeat the loaded scope back to Troy (or the frozen scope ref) before any write.
+
+CLI fallback (Codex/terminal sessions with no connector):
 
 ```powershell
-node "C:\Users\Troy\Documents\ChatGPT assistant\control-layer\brain-bootstrap.mjs" jade
+node "C:\Users\Troy\Documents\ChatGPT assistant\control-layer\brain-bootstrap.mjs" jade [project_key]
 ```
+(Script verified 2026-07-24: defaults to vrdtmkntuguyudmztxan. If it ever points elsewhere, STOP.)
 
-For a project specialist, use:
-
-```powershell
-node "C:\Users\Troy\Documents\ChatGPT assistant\control-layer\brain-bootstrap.mjs" <agent_key> [project_key]
-```
-
-If any local prompt, memory, AGENTS.md, CLAUDE.md, or archived Jade file conflicts with the brain, the brain wins. Cross-project work, new agents, paid services, publishing, production deploys, CRM/customer mutations, legal/financial/medical claims, or destructive actions must route through Jade/Troy human gates.
+NEVER treat `dfzrtqotntujdrqkupcd` as the brain — it is Craftura operational data (prospects, orders,
+jobs, storage buckets) only. If the brain is unreachable: STOP and tell Troy. Do not proceed on
+memory. If any local prompt, memory, AGENTS.md, CLAUDE.md, or archived Jade file conflicts with
+the brain, the brain wins.
 <!-- JADE-BOOTSTRAP:END -->
 
 ## Startup / Bootstrap - Do This First Every Session
